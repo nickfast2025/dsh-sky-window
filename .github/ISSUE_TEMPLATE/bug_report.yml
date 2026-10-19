@@ -1,0 +1,38 @@
+name: Bug report / 问题反馈
+description: Report an installation, sky, or workspace issue / 反馈安装、天空或工作区问题
+body:
+  - type: input
+    id: dsh-version
+    attributes:
+      label: DSH version / DSH 版本
+      placeholder: 0.2.1-rc.2
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS and browser / 系统与浏览器
+      placeholder: Windows 11, Edge
+    validations:
+      required: true
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation / 安装方式
+      options:
+        - Repository launcher / 仓库启动脚本
+        - DSH plugin command with tgz / 打包后使用插件命令
+        - Other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result, and actual result / 复现步骤、预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Screenshots or logs / 截图或日志
+      description: Remove API keys, sign-in URLs, personal paths, and private conversations before posting. / 发出前请移除密钥、登录链接、个人路径和私人对话。
