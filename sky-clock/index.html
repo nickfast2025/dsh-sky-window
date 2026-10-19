@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#dce7e8">
+  <title>天空窗 · DSH 换肤原型</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="solar.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" aria-hidden="true"><defs>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H4l1.5-4A8 8 0 1 1 20 11.5Z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-rise" viewBox="0 0 24 24"><path d="M2 18h20M5 14a7 7 0 0 1 14 0M12 2v3M3 7l2 2m14-2-2 2M9 21h6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14a9 9 0 0 1-10.5-11A9 9 0 1 0 20.5 14Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C8 2 2 8 6 16s16 2 14-12ZM4 21l11-12"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </defs></svg>
+
+  <div class="app" id="app">
+    <aside class="sidebar" aria-label="对话导航">
+      <a class="brand" href="#" aria-label="天空窗首页"><span class="brand-mark"><i></i></span><span>deepseek<span class="brand-sub">HARNESS</span></span></a>
+      <button class="new-chat" id="newChat"><svg><use href="#i-plus"/></svg>新对话</button>
+      <div class="nav-caption">工作空间</div>
+      <button class="nav-item selected" id="homeButton"><svg><use href="#i-chat"/></svg>对话</button>
+      <button class="nav-item" id="sampleCode"><svg><use href="#i-grid"/></svg>代码预览<span class="nav-badge">DEMO</span></button>
+      <div class="nav-caption recent-caption">最近</div>
+      <button class="history-item" id="sampleConversation">给工作留一点呼吸感<span>天空窗的设计思路</span></button>
+      <div class="sidebar-bottom"><div class="sidebar-sky-note"><span class="tiny-sun"></span><p>在专注里，也感受日光。</p></div><button class="profile" id="sidebarSettings"><span class="avatar">G</span><span>我的工作空间<small>天空窗 · 本地原型</small></span><svg><use href="#i-settings"/></svg></button></div>
+    </aside>
+
+    <main id="main">
+      <div class="sky-scene" aria-hidden="true">
+        <div class="sky-gradient"></div><div class="horizon-glow"></div><div class="stars" id="stars"></div><div class="scene-texture"></div>
+        <svg class="landscape landscape-far" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 170C100 120 200 163 310 125S475 105 590 160 770 100 915 144 1130 95 1255 120 1380 156 1440 130V420H0Z"/></svg>
+        <svg class="landscape landscape-mid" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 192C135 152 205 183 345 214S510 134 670 178 858 235 1020 182 1240 170 1440 210V420H0Z"/></svg>
+        <svg class="landscape landscape-near" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 277C155 205 330 287 485 285S742 223 919 285 1220 245 1440 254V420H0Z"/></svg>
+      </div>
+
+      <header class="topbar"><div class="page-title"><span class="live-dot"></span>天空窗<span class="preview-badge">界面预览</span></div><div class="header-actions"><button class="time-chip" id="timeChip" title="打开时间预览"><svg><use href="#i-clock"/></svg><span id="headerTime">--:--</span><span id="headerCity">上海</span></button><button class="icon-button" id="openSettings" aria-label="天空设置" title="天空设置"><svg><use href="#i-settings"/></svg></button></div></header>
+
+      <div class="sky-stage" id="skyStage">
+        <svg class="sky-orbit" viewBox="0 0 1000 400" aria-label="当地日出到日落的太阳时钟">
+          <defs>
+            <radialGradient id="sunHalo"><stop stop-color="#fff4b7" stop-opacity=".7"/><stop offset=".4" stop-color="#ffdb9c" stop-opacity=".2"/><stop offset="1" stop-color="#ffdb9c" stop-opacity="0"/></radialGradient>
+            <radialGradient id="sunFace"><stop stop-color="#fff4c8"/><stop offset="1" stop-color="#ffd47e"/></radialGradient>
+            <clipPath id="horizonClip"><rect width="1000" height="315" x="0" y="0"/></clipPath>
+            <mask id="moonMask"><rect width="90" height="90" fill="white"/><circle cx="57" cy="27" r="24" fill="black"/></mask>
+          </defs>
+          <g class="orbit-details"><path class="orbit-track" d="M150 315 A350 252 0 0 1 850 315"/><path class="orbit-progress" id="orbitProgress" d="M150 315 A350 252 0 0 1 850 315" pathLength="1"/>
+            <path class="horizon-line" d="M105 315H895"/><circle class="endpoint" cx="150" cy="315" r="3"/><circle class="endpoint" cx="850" cy="315" r="3"/>
+            <text x="150" y="345" class="orbit-time" id="sunriseLabel" text-anchor="middle">--:--</text><text x="150" y="365" class="orbit-caption" text-anchor="middle">日出</text>
+            <text x="850" y="345" class="orbit-time" id="sunsetLabel" text-anchor="middle">--:--</text><text x="850" y="365" class="orbit-caption" text-anchor="middle">日落</text>
+            <text x="500" y="341" class="orbit-noon" id="orbitCenter" text-anchor="middle">每一刻，都有自己的光</text>
+          </g>
+          <g clip-path="url(#horizonClip)" class="solar-layer"><g id="sunPosition" class="sun-position" role="button" tabindex="0" aria-label="展开天空和太阳轨迹">
+            <circle r="76" fill="url(#sunHalo)"/><g class="sun-rays"><path d="M0-34v-6M0 34v6M-34 0h-6M34 0h6M-24-24l-4-4M24 24l4 4M-24 24l-4 4M24-24l4-4"/></g><circle class="sun-body" r="21" fill="url(#sunFace)"/><ellipse cx="-6" cy="-7" rx="10" ry="6" fill="#fff9de" opacity=".35"/>
+          </g></g>
+          <g id="moonPosition" class="moon-position" transform="translate(746 55)" role="button" tabindex="0" aria-label="展开夜空"><circle cx="45" cy="45" r="37" fill="#d7e2fd" opacity=".045"/><g mask="url(#moonMask)"><circle cx="40" cy="40" r="23" fill="#f3edcf"/><circle cx="32" cy="45" r="4" fill="#d7d1b4" opacity=".38"/><circle cx="40" cy="54" r="2" fill="#d7d1b4" opacity=".3"/></g></g>
+          <g class="cloud cloud-a"><path class="cloud-shadow" d="M124 173c-18 0-26-8-24-18 2-10 12-14 24-12 2-20 17-30 33-22 7-19 31-19 40-3 17-4 30 7 30 20 22-3 35 6 34 17-1 14-18 18-35 18Z"/><path class="cloud-top" d="M111 151c2-7 8-10 20-8 2-21 17-25 29-16 9-18 28-17 36-2 17-6 30 5 29 16 18-1 25 4 26 10Z"/></g>
+          <g class="cloud cloud-b"><path class="cloud-shadow" d="M625 209c-26 0-35-12-29-25 4-8 14-12 26-11 6-23 24-31 41-17 12-15 35-13 42 6 25-2 42 12 37 24 22-3 36 3 36 12 0 10-16 11-34 11Z"/><path class="cloud-top" d="M606 184c4-6 13-7 24-6 3-20 18-29 34-15 11-12 29-10 35 7 22-3 32 4 32 14Z"/></g>
+          <g class="cloud cloud-c"><path class="cloud-shadow" d="M370 278c-22 0-31-7-30-16 1-12 16-17 29-14 8-20 31-24 44-9 20-3 34 5 35 17 23-2 36 6 34 13-2 9-17 9-34 9Z"/><path class="cloud-top" d="M351 258c3-7 11-9 22-7 6-15 25-18 36-6 17-2 28 4 29 12Z"/></g>
+        </svg>
+        <div class="sky-expanded-footer"><span id="expandedDate"></span><span id="expandedPhase"></span></div>
+      </div>
+
+      <section class="workspace" aria-label="对话工作区">
+        <div class="welcome" id="welcome"><div class="welcome-eyebrow"><svg><use href="#i-leaf"/></svg><span id="phaseLabel">晴空，正好</span></div><h1 id="greeting">今天，也抬头看看天。</h1><p id="skyDescription">把思路交给这里，给目光留一片天空。</p><div class="suggestions"><button data-prompt="idea">梳理一个想法<span>↗</span></button><button data-prompt="code">看看代码可读性<span>↗</span></button><button id="lookUpWelcome">抬头看一会儿<span>☀</span></button></div></div>
+        <div class="thread" id="thread" role="log" aria-label="本地演示对话" aria-live="polite" tabindex="0"></div>
+        <div class="composer-wrap"><form class="composer" id="chatForm"><label class="sr-only" for="messageInput">输入消息</label><textarea id="messageInput" rows="2" placeholder="此刻，你想一起做些什么？" maxlength="6000"></textarea><div class="composer-toolbar"><span class="composer-model"><span class="model-mark">✦</span>DSH 工作区<span class="local-label">本地演示</span></span><button class="send-button" id="sendButton" type="submit" aria-label="发送消息" disabled><svg><use href="#i-arrow"/></svg></button></div></form><div class="workspace-footer"><button class="sky-status" id="skyStatus"><span class="tiny-sun"></span><span id="skyStatusText">正在读取天空…</span></button><button class="look-up-button" id="lookUpButton">抬头看看<svg><use href="#i-sun"/></svg></button></div></div>
+      </section>
+
+      <div class="look-up-ui" id="lookUpUi"><span class="look-up-kicker">给眼睛，一点远方。</span><h2 id="lookUpTitle">天空一直都在。</h2><p id="lookUpDetail"></p><button class="return-button" id="returnToWork">回到工作<span>↙</span></button></div>
+      <div class="preview-banner" id="previewBanner" hidden><span class="preview-dot"></span><span id="previewText">正在预览</span><button id="pausePlayback" hidden>暂停</button><button id="restoreLive">回到此刻 ↗</button></div>
+    </main>
+  </div>
+
+  <dialog class="settings-panel" id="settingsDialog" aria-labelledby="settingsTitle">
+    <div class="settings-heading"><div><span class="settings-eyebrow">YOUR LITTLE SKY</span><h2 id="settingsTitle">天空设置</h2></div><button class="icon-button" id="closeSettings" aria-label="关闭天空设置"><svg><use href="#i-close"/></svg></button></div>
+    <section class="settings-section"><label class="field-label" for="citySelect">天空所在的位置</label><div class="location-controls"><select id="citySelect"><option value="shanghai">上海 · 中国</option><option value="beijing">北京 · 中国</option><option value="chengdu">成都 · 中国</option><option value="shenzhen">深圳 · 中国</option><option value="tokyo">东京 · 日本</option><option value="london">伦敦 · 英国</option><option value="newyork">纽约 · 美国</option><option value="sydney">悉尼 · 澳大利亚</option><option value="custom" disabled>当前位置</option></select><button class="small-button" id="locateButton"><svg><use href="#i-pin"/></svg>定位</button></div><p class="field-help" id="locationHelp">Asia/Shanghai · 日出日落按所选城市计算</p><div class="sun-times"><div><svg><use href="#i-rise"/></svg><span>日出<strong id="sunriseCard">--:--</strong></span></div><div><svg class="sunset-icon"><use href="#i-rise"/></svg><span>日落<strong id="sunsetCard">--:--</strong></span></div><span class="day-length" id="dayLength"></span></div></section>
+    <section class="settings-section"><div class="field-row"><label class="field-label" for="timeSlider">沿着时间，看看天空</label><span class="time-value" id="previewTimeValue">--:--</span></div><input type="range" id="timeSlider" min="0" max="1439" step="1" aria-label="预览时间"><div class="range-labels"><span>00:00</span><span>12:00</span><span>24:00</span></div><div class="time-presets"><button data-moment="sunrise">日出</button><button data-moment="noon">正午</button><button data-moment="sunset">日落</button><button data-moment="night">夜空</button></div><div class="date-row"><label for="previewDate">日期</label><input id="previewDate" type="date"><button class="small-button" id="playDay"><svg><use href="#i-play"/></svg><span>看一天</span></button></div><button class="live-button" id="liveButton">回到此刻的天空</button></section>
+    <section class="settings-section appearance-section"><div class="field-row"><label class="field-label" for="intensitySlider">天空浓度</label><span class="range-value" id="intensityValue">75%</span></div><input type="range" id="intensitySlider" min="25" max="100" value="75"><div class="range-labels"><span>更安静</span><span>更鲜明</span></div><label class="toggle-row" for="motionToggle"><span>云朵缓慢飘动<small>动效会在页面隐藏时暂停</small></span><input type="checkbox" id="motionToggle" checked><span class="switch" aria-hidden="true"></span></label></section>
+    <p class="settings-footnote">半圆表示日出到日落的时间进度。天空为晴天插画，日出日落为天文估算。本地对话用于预览阅读效果。</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

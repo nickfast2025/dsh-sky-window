@@ -1,0 +1,28 @@
+<div class="scene" aria-hidden="true">
+  <div class="sky-gradient"></div><div class="horizon-glow"></div><div class="stars"></div>
+  <svg class="landscape far" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 170C100 120 200 163 310 125S475 105 590 160 770 100 915 144 1130 95 1255 120 1380 156 1440 130V420H0Z"/></svg>
+  <svg class="landscape mid" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 192C135 152 205 183 345 214S510 134 670 178 858 235 1020 182 1240 170 1440 210V420H0Z"/></svg>
+  <svg class="landscape near" viewBox="0 0 1440 420" preserveAspectRatio="none"><path d="M0 277C155 205 330 287 485 285S742 223 919 285 1220 245 1440 254V420H0Z"/></svg>
+  <div class="stage"><svg class="orbit" viewBox="0 0 1000 400">
+    <defs>
+      <radialGradient id="skyHalo"><stop stop-color="#fff4b7" stop-opacity=".7"/><stop offset=".4" stop-color="#ffdb9c" stop-opacity=".2"/><stop offset="1" stop-color="#ffdb9c" stop-opacity="0"/></radialGradient>
+      <radialGradient id="skySun"><stop stop-color="#fff4c8"/><stop offset="1" stop-color="#ffd47e"/></radialGradient>
+      <clipPath id="skyHorizon"><rect width="1000" height="315"/></clipPath>
+      <mask id="skyMoon"><rect width="90" height="90" fill="white"/><circle cx="57" cy="27" r="24" fill="black"/></mask>
+    </defs>
+    <g class="orbit-details"><path class="track" d="M150 315A350 252 0 0 1 850 315"/><path class="progress" d="M150 315A350 252 0 0 1 850 315" pathLength="1"/><path class="horizon" d="M105 315H895"/><circle class="endpoint" cx="150" cy="315" r="3"/><circle class="endpoint" cx="850" cy="315" r="3"/>
+      <text x="150" y="345" text-anchor="middle" class="rise time"></text><text x="150" y="365" text-anchor="middle" class="caption">日出</text>
+      <text x="850" y="345" text-anchor="middle" class="set time"></text><text x="850" y="365" text-anchor="middle" class="caption">日落</text>
+      <text x="500" y="342" text-anchor="middle" class="center-caption caption">半圆 · 日出到日落</text>
+    </g>
+    <g clip-path="url(#skyHorizon)"><g class="sun"><circle r="76" fill="url(#skyHalo)"/><g class="rays"><path d="M0-34v-6M0 34v6M-34 0h-6M34 0h6M-24-24l-4-4M24 24l4 4M-24 24l-4 4M24-24l4-4"/></g><circle class="sun-body" r="21" fill="url(#skySun)"/><ellipse cx="-6" cy="-7" rx="10" ry="6" fill="#fff9de" opacity=".35"/></g></g>
+    <g class="moon" transform="translate(746 55)"><circle cx="45" cy="45" r="37" fill="#d7e2fd" opacity=".045"/><g mask="url(#skyMoon)"><circle cx="40" cy="40" r="23" fill="#f3edcf"/><circle cx="32" cy="45" r="4" fill="#d7d1b4" opacity=".38"/><circle cx="40" cy="54" r="2" fill="#d7d1b4" opacity=".3"/></g></g>
+    <g class="cloud a"><path class="cloud-shadow" d="M124 173c-18 0-26-8-24-18 2-10 12-14 24-12 2-20 17-30 33-22 7-19 31-19 40-3 17-4 30 7 30 20 22-3 35 6 34 17-1 14-18 18-35 18Z"/><path class="cloud-top" d="M111 151c2-7 8-10 20-8 2-21 17-25 29-16 9-18 28-17 36-2 17-6 30 5 29 16 18-1 25 4 26 10Z"/></g>
+    <g class="cloud b"><path class="cloud-shadow" d="M625 209c-26 0-35-12-29-25 4-8 14-12 26-11 6-23 24-31 41-17 12-15 35-13 42 6 25-2 42 12 37 24 22-3 36 3 36 12 0 10-16 11-34 11Z"/><path class="cloud-top" d="M606 184c4-6 13-7 24-6 3-20 18-29 34-15 11-12 29-10 35 7 22-3 32 4 32 14Z"/></g>
+    <g class="cloud c"><path class="cloud-shadow" d="M370 278c-22 0-31-7-30-16 1-12 16-17 29-14 8-20 31-24 44-9 20-3 34 5 35 17 23-2 36 6 34 13-2 9-17 9-34 9Z"/><path class="cloud-top" d="M351 258c3-7 11-9 22-7 6-15 25-18 36-6 17-2 28 4 29 12Z"/></g>
+    <g class="whale-flight" aria-hidden="true"><g class="whale-bob">
+      <g class="whale-shape" transform="translate(615 175) scale(1.4)">__DEEPSEEK_CLOUD_PATH__</g>
+    </g></g>
+  </svg></div>
+  <div class="veil"></div>
+</div>
