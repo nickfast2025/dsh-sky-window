@@ -78,7 +78,15 @@ On Windows, this local launcher sets DSH's workspace folder picker to its web br
 
 ## Install into an existing profile
 
-Download and extract the complete repository, then open PowerShell at its root. Pack the plugin and install it into your own profile using DSH's official command; this example uses `web`:
+Download `dsh-sky-window-0.1.0.tgz` from the [v0.1.0 release page](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0) and install it from its download directory using DSH's official command; this example uses `web`:
+
+```powershell
+dsh plugin --profile web add .\dsh-sky-window-0.1.0.tgz
+```
+
+Restart that profile with your original launch command, then enable Sky Window in DSH settings. The release archive requires no source download or local build.
+
+To pack from source instead, download and extract the complete repository, then open PowerShell at its root:
 
 ```powershell
 cd .\dsh-sky-window

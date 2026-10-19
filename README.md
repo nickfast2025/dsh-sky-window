@@ -10,7 +10,17 @@
 
 ![从早到晚的天空窗演示](./dsh-sky-window/docs/media/sky-from-morning-to-night.gif)
 
-## 快速开始（Windows Web）
+## 已有 DSH：安装插件
+
+从 [v0.1.0 发布页](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0)下载 `dsh-sky-window-0.1.0.tgz`，在下载目录打开 PowerShell：
+
+```powershell
+dsh plugin --profile web add .\dsh-sky-window-0.1.0.tgz
+```
+
+`web` 是示例 Profile 名称。安装后按原来的启动命令重启该 DSH，在 DSH 设置中启用天空窗。继续使用原有模型配置、聊天记录、地址和端口。详细步骤及卸载方法见[插件说明](./dsh-sky-window/README.md#安装到已有-profile)。
+
+## 独立体验（Windows Web）
 
 安装 Node.js 22 或更高版本，从 GitHub 的 **Code → Download ZIP** 下载并解压本仓库，在包含本 README 的目录打开 PowerShell。
 
@@ -30,7 +40,9 @@ dsh --version
 
 浏览器通常会自动打开。若需手动打开，请使用终端中 **DSH 打印的完整认证链接**；只输入 `http://127.0.0.1:3081` 可能会显示需要认证。该链接含临时登录令牌，请勿公开。
 
-此启动方式使用项目内 `.runtime/dsh-home` 作为独立配置目录，首次需在 DSH 原生设置中配置模型。点击侧栏「工作区」旁的添加按钮，可浏览目录、新建文件夹并加入工作区。端口冲突时可运行 `.\start-dsh-sky.ps1 -Port 3085`；在终端按 Ctrl+C 停止服务。
+脚本会在解压后的项目文件夹内自动创建 `.runtime/dsh-home`，保存这套环境的设置和聊天记录。首次在 DSH 网页设置中填写自己的 API Key 并选择模型，保存后下次启动会继续使用。已有 DSH 的用户也可以选择上面的插件安装方式，沿用现有配置。
+
+点击侧栏「工作区」旁的添加按钮，可浏览目录、新建文件夹并加入工作区。端口冲突时可运行 `.\start-dsh-sky.ps1 -Port 3085`；在终端按 Ctrl+C 停止服务。
 
 插件的完整说明、截图和 MP4 演示在 [dsh-sky-window/README.md](./dsh-sky-window/README.md)。
 

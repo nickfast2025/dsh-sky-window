@@ -1,6 +1,6 @@
 # Changelog / 更新记录
 
-## 0.1.0 — Unreleased / 待发布
+## 0.1.0 — 2026-10-19
 
 - Illustrated sky based on city time, with a daytime sun path, dawn, sunset, moon, and stars. / 按城市当地时间变化的插画天空，包含白天太阳轨迹、晨暮、月亮和星光。
 - Immersive sky, time and date preview, day playback, and a paused sky as wallpaper. / 沉浸看天、日期时间预览、播放一天及暂停壁纸。

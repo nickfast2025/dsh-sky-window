@@ -10,7 +10,17 @@ Sky Window is a theme plugin for the real DeepSeek Harness (DSH) workspace. The 
 
 ![Sky Window from morning to night](./dsh-sky-window/docs/media/sky-from-morning-to-night.gif)
 
-## Quick start (Windows Web)
+## Already using DSH? Install the plugin
+
+Download `dsh-sky-window-0.1.0.tgz` from the [v0.1.0 release page](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0) and open PowerShell in its download directory:
+
+```powershell
+dsh plugin --profile web add .\dsh-sky-window-0.1.0.tgz
+```
+
+`web` is the example profile name. Restart that DSH profile with your original launch command, then enable Sky Window in DSH settings. Keep your existing model configuration, conversations, address, and port. See the [plugin guide](./dsh-sky-window/README.en.md#install-into-an-existing-profile) for details and uninstall instructions.
+
+## Try it with separate settings (Windows Web)
 
 Install Node.js 22 or later, download and extract this repository using GitHub's **Code → Download ZIP**, and open PowerShell in the directory containing this README.
 
@@ -30,7 +40,9 @@ Start Sky Window:
 
 The browser normally opens automatically. To open it manually, use the **full authenticated URL printed by DSH** in the terminal. Opening only `http://127.0.0.1:3081` may show an authentication message. The full URL contains a temporary sign-in token; do not publish it.
 
-This launcher uses an isolated configuration directory at `.runtime/dsh-home`. Configure a model in DSH's native settings on first use. The add button beside Workspaces lets you browse folders, create a folder, and open it as a workspace. If the port is occupied, run `.\start-dsh-sky.ps1 -Port 3085`. Press Ctrl+C in the terminal to stop the service.
+The launcher automatically creates `.runtime/dsh-home` inside the extracted project folder to store this environment's settings and conversations. Enter your API key and select a model in the DSH web settings on first use; saved settings are reused on later launches. Existing DSH users can instead choose the plugin installation above to keep their current configuration.
+
+The add button beside Workspaces lets you browse folders, create a folder, and open it as a workspace. If the port is occupied, run `.\start-dsh-sky.ps1 -Port 3085`. Press Ctrl+C in the terminal to stop the service.
 
 For features, more screenshots, setup details, and the [HD MP4 demo](./dsh-sky-window/docs/media/sky-from-morning-to-night.mp4), see the [plugin README](./dsh-sky-window/README.en.md).
 

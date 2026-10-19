@@ -78,7 +78,15 @@
 
 ## 安装到已有 Profile
 
-下载并解压完整仓库后，在仓库根目录打开 PowerShell。先打包，再用 DSH 官方命令安装到自己的 Profile；下面以 `web` 为例：
+从 [v0.1.0 发布页](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0)下载 `dsh-sky-window-0.1.0.tgz`，在下载目录使用 DSH 官方命令安装；下面以 `web` 为例：
+
+```powershell
+dsh plugin --profile web add .\dsh-sky-window-0.1.0.tgz
+```
+
+然后按原来的启动命令重启该 Profile，并在 DSH 设置中启用天空窗。安装发布包无需下载完整源码或自行构建。
+
+如果希望从源码打包，下载并解压完整仓库后，在仓库根目录打开 PowerShell：
 
 ```powershell
 cd .\dsh-sky-window
