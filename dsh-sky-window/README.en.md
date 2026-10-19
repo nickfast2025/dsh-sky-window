@@ -89,6 +89,8 @@ dsh web
 
 `npm pack` builds automatically. The plugin source uses Node built-in modules and needs no extra dependency installation. Run `dsh web` from the directory you want to use as your workspace. If that profile is already running, restart it after installation, then enable Sky Window in DSH settings. Disable any other background plugin in the same profile if its styles overlap.
 
+When adding the plugin to an existing DSH installation, keep using your original launch command (including any custom port arguments), address, and port. Sky Window runs inside that DSH service; it does not start a separate server or require port `3081`.
+
 To disable the sky temporarily, turn off Enable Sky Window in its settings; the previous theme is restored. To uninstall it:
 
 ```powershell

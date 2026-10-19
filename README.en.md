@@ -34,7 +34,7 @@ This launcher uses an isolated configuration directory at `.runtime/dsh-home`. C
 
 For features, more screenshots, setup details, and the [HD MP4 demo](./dsh-sky-window/docs/media/sky-from-morning-to-night.mp4), see the [plugin README](./dsh-sky-window/README.en.md).
 
-To add only the plugin to an existing DSH profile, follow the [package installation steps](./dsh-sky-window/README.en.md#install-into-an-existing-profile).
+To add only the plugin to an existing DSH profile, follow the [package installation steps](./dsh-sky-window/README.en.md#install-into-an-existing-profile). After installation, keep using your existing DSH launch command, address, and port. The Sky Window plugin does not start a separate server or require port `3081`.
 
 ## Verify
 

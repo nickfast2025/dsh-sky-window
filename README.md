@@ -34,7 +34,7 @@ dsh --version
 
 插件的完整说明、截图和 MP4 演示在 [dsh-sky-window/README.md](./dsh-sky-window/README.md)。
 
-已有 DSH、只想安装插件时，按[打包安装步骤](./dsh-sky-window/README.md#安装到已有-profile)操作。
+已有 DSH、只想安装插件时，按[打包安装步骤](./dsh-sky-window/README.md#安装到已有-profile)操作。安装后继续使用原来的 DSH 启动命令、地址和端口；天空窗插件不会另开一个服务，也不要求使用 `3081`。
 
 ## 验证
 
