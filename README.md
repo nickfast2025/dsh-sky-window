@@ -6,6 +6,16 @@
 
 这是一个运行在真实 DeepSeek Harness（DSH）工作区里的换肤插件：太阳按当地时间沿半圆轨迹移动，天空从晨光、晴空、暮光过渡到月色与星光，云朵和 DeepSeek 标志云彩会缓慢漂浮。
 
+**工作时，天空留在身后。** 原生工作区、对话和输入框照常使用。
+
+[![天空窗在真实 DSH 工作区中的效果](./dsh-sky-window/docs/images/02-workspace-skin.png)](./dsh-sky-window/docs/images/02-workspace-skin.png)
+
+**把天空调成喜欢的样子。** 选择城市、预览日出日落、调整天空浓度与云朵动效。
+
+[![天空设置与时间预览](./dsh-sky-window/docs/images/03-sky-settings.png)](./dsh-sky-window/docs/images/03-sky-settings.png)
+
+两张截图均直接引用 PNG 原图，点击可查看原始尺寸。
+
 ![晨光、晴空、暮光与夜色四宫格](./dsh-sky-window/docs/images/00-day-in-four-scenes.png)
 
 ![从早到晚的天空窗演示](./dsh-sky-window/docs/media/sky-from-morning-to-night.gif)

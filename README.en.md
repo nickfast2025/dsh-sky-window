@@ -6,6 +6,16 @@ A living sky for people who spend their day working at a screen.
 
 Sky Window is a theme plugin for the real DeepSeek Harness (DSH) workspace. The sun follows a semicircular path based on local time. The sky moves from sunrise through daylight and sunset to moonlight and stars, while clouds and a subtle DeepSeek logo cloud drift past.
 
+**A sky behind your work.** Keep using the native workspace, conversations, and composer.
+
+[![Sky Window in the real DSH workspace](./dsh-sky-window/docs/images/02-workspace-skin.png)](./dsh-sky-window/docs/images/02-workspace-skin.png)
+
+**Make the window yours.** Choose a city, preview sunrise and sunset, and adjust sky intensity and cloud motion.
+
+[![Sky settings and time preview](./dsh-sky-window/docs/images/03-sky-settings.png)](./dsh-sky-window/docs/images/03-sky-settings.png)
+
+Both screenshots use the original PNG files. Click either image to view its original size.
+
 ![Sunrise, daylight, sunset, and night in Sky Window](./dsh-sky-window/docs/images/00-day-in-four-scenes.png)
 
 ![Sky Window from morning to night](./dsh-sky-window/docs/media/sky-from-morning-to-night.gif)
