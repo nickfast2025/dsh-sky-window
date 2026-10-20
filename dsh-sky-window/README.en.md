@@ -4,7 +4,7 @@
 
 > A living sky for people who spend their day working at a screen.
 
-![Four scenes in the same city and day: sunrise, daylight, sunset, and night](./docs/images/00-day-in-four-scenes.png)
+![Four scenes in the same city and day: sunrise, daylight, sunset, and night](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/00-day-in-four-scenes.png)
 
 These four scenes were captured from DSH running with the same date and city. The collage retains the source resolution of each screenshot; open the image to see the full size.
 
@@ -14,9 +14,9 @@ While you work, the sky stays quietly behind the workspace. When you need a shor
 
 ## A day in the sky
 
-![A real recording of Sky Window playing from morning to night](./docs/media/sky-from-morning-to-night.gif)
+![A real recording of Sky Window playing from morning to night](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/media/sky-from-morning-to-night.gif)
 
-This recording uses the plugin's “Play a day” feature to show the sun's path and the changing sky. The GIF is a lightweight README preview; [watch the 1364 × 672 MP4](./docs/media/sky-from-morning-to-night.mp4) for the larger view.
+This recording uses the plugin's “Play a day” feature to show the sun's path and the changing sky. The GIF is a lightweight README preview; [open the 1364 × 672 MP4](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/media/sky-from-morning-to-night.mp4) for the larger view.
 
 ## Experience
 
@@ -24,13 +24,13 @@ This recording uses the plugin's “Play a day” feature to show the sun's path
 
 The native sidebar, conversations, composer, and model controls remain available. A compact control in the lower right of the home screen shows the time and city and opens the sky. It disappears in conversations to keep model and usage details visible. A soft reading backdrop helps with long conversations.
 
-![Sky Window behind the DSH workspace](./docs/images/02-workspace-skin.png)
+![Sky Window behind the DSH workspace](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/02-workspace-skin.png)
 
 ### Look up for a moment
 
 The immersive view reduces text and controls. The sun's path shows how far the day has progressed, clouds drift slowly, and the lower corners hold the entries for returning to work and playing through a day.
 
-![Immersive sky view](./docs/images/01-immersive-sky.png)
+![Immersive sky view](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/01-immersive-sky.png)
 
 ### Explore time
 
@@ -40,13 +40,13 @@ Drag the timeline or choose sunrise, noon, sunset, or night. The glass control b
 
 Pause on a time in the sky view, then return to work. That sky stays in place without a floating preview reminder. To restore the live sky, open “Look up” again and choose “Back to now.”
 
-![A paused sunset behind the workspace](./docs/images/06-frozen-wallpaper.png)
+![A paused sunset behind the workspace](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/06-frozen-wallpaper.png)
 
 ### Make the window yours
 
 Choose a city, request browser location with a click, adjust sky intensity, pause cloud motion, or play through a day.
 
-![Sky Window settings](./docs/images/03-sky-settings.png)
+![Sky Window settings](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/03-sky-settings.png)
 
 ## Features
 

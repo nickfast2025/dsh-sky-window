@@ -1,6 +1,6 @@
 {
   "name": "dsh-sky-window",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A living illustrated sky for the real DeepSeek Harness workspace.",
   "type": "module",
   "license": "MIT",

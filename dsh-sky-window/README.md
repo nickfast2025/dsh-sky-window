@@ -4,7 +4,7 @@
 
 > 给长时间对着屏幕的人，一扇会流动的天空。
 
-![北京同一天的晨光、晴空、暮光与夜色四宫格](./docs/images/00-day-in-four-scenes.png)
+![北京同一天的晨光、晴空、暮光与夜色四宫格](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/00-day-in-four-scenes.png)
 
 晨光、晴空、暮光、夜色。四张画面来自实际运行的 DSH，同一天、同一城市的时间预览。四宫格保留了每张截图的原始像素，点击图片可查看大图。
 
@@ -14,9 +14,9 @@
 
 ## 从早到晚，看一天
 
-![天空窗真实播放的晨光至夜色动图](./docs/media/sky-from-morning-to-night.gif)
+![天空窗真实播放的晨光至夜色动图](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/media/sky-from-morning-to-night.gif)
 
-这段演示录自插件的「看一天」播放功能，展示清晨到夜间的太阳轨迹与天空渐变。上方动图为 README 预览；[观看 1364 × 672 高清 MP4](./docs/media/sky-from-morning-to-night.mp4)。
+这段演示录自插件的「看一天」播放功能，展示清晨到夜间的太阳轨迹与天空渐变。上方动图为 README 预览；[打开 1364 × 672 高清 MP4](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/media/sky-from-morning-to-night.mp4)。
 
 ## 体验
 
@@ -24,13 +24,13 @@
 
 原生侧栏、会话、输入框和模型设置保持可用。工作首页右下角有时间、城市和进入天空的入口；进入对话后，这组入口会收起，避免遮挡模型与统计信息。长对话后面有一层轻柔的阅读背景。
 
-![工作区中的天空窗](./docs/images/02-workspace-skin.png)
+![工作区中的天空窗](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/02-workspace-skin.png)
 
 ### 抬头时，只看一会儿天
 
 沉浸模式减少了文字与控件：太阳轨迹说明一天走到了哪里，云朵缓慢漂过，底部角落保留返回工作和播放一天的入口。
 
-![天空窗沉浸模式](./docs/images/01-immersive-sky.png)
+![天空窗沉浸模式](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/01-immersive-sky.png)
 
 ### 沿着时间看天空
 
@@ -40,13 +40,13 @@
 
 在天空页暂停到一个时刻，再回到工作，所选天空会保持不动。工作区不会悬浮预览提示；需要恢复实时天空时，再进入「抬头看看」。
 
-![冻结日落作为工作区壁纸](./docs/images/06-frozen-wallpaper.png)
+![冻结日落作为工作区壁纸](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/06-frozen-wallpaper.png)
 
 ### 调整一扇属于自己的窗
 
 可以选择城市或在点击后使用浏览器定位，调节天空浓度、暂停云朵动效，也可以让一天自动掠过。
 
-![天空窗设置](./docs/images/03-sky-settings.png)
+![天空窗设置](https://cdn.jsdelivr.net/npm/dsh-sky-window@latest/docs/images/03-sky-settings.png)
 
 ## 功能
 
