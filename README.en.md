@@ -22,7 +22,15 @@ Both screenshots use the original PNG files. Click either image to view its orig
 
 ## Already using DSH? Install the plugin
 
-Download `dsh-sky-window-0.1.0.tgz` from the [v0.1.0 release page](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0) and open PowerShell in its download directory:
+Install by package name from [npm](https://www.npmjs.com/package/dsh-sky-window), with no source download or local build:
+
+```powershell
+dsh plugin --profile web add dsh-sky-window
+```
+
+The npm `0.1.1` package passed official installation and actual loading in an isolated profile. Its runtime files and DSH loading manifest match the fully tested `0.1.0` package, so those functional results also apply.
+
+Alternatively, download `dsh-sky-window-0.1.0.tgz` from the [v0.1.0 release page](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0) and open PowerShell in its download directory:
 
 ```powershell
 dsh plugin --profile web add .\dsh-sky-window-0.1.0.tgz
