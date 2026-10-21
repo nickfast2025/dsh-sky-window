@@ -30,6 +30,8 @@ dsh plugin --profile web add dsh-sky-window
 
 The npm `0.1.1` package passed official installation and actual loading in an isolated profile. Its runtime files and DSH loading manifest match the fully tested `0.1.0` package, so those functional results also apply.
 
+`0.1.2` adds npm repository and project links for community collectors. A file-by-file comparison with the published `0.1.1` package confirmed that only `package.json` metadata changed; runtime files and DSH loading declarations are identical.
+
 Alternatively, download `dsh-sky-window-0.1.0.tgz` from the [v0.1.0 release page](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0) and open PowerShell in its download directory:
 
 ```powershell

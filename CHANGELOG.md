@@ -1,5 +1,14 @@
 # Changelog / 更新记录
 
+## 0.1.2 — 2026-10-21
+
+- Add the GitHub repository and package subdirectory to npm metadata so community collectors can associate the published package with its listed repository. / 补充 npm 包的 GitHub 仓库地址和子目录，供社区采集器关联已发布包与收录条目。
+- Add project and issue links to npm metadata. Runtime code and DSH loading declarations are unchanged. / 补充项目主页与问题反馈链接；运行代码和 DSH 加载声明不变。
+
+## 0.1.1 — 2026-10-20
+
+- Use absolute image and video links in the npm README. Runtime code is unchanged from 0.1.0. / npm README 使用图片和视频的绝对链接；运行代码与 0.1.0 一致。
+
 ## 0.1.0 — 2026-10-19
 
 - Illustrated sky based on city time, with a daytime sun path, dawn, sunset, moon, and stars. / 按城市当地时间变化的插画天空，包含白天太阳轨迹、晨暮、月亮和星光。

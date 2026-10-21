@@ -30,6 +30,8 @@ dsh plugin --profile web add dsh-sky-window
 
 npm `0.1.1` 已通过独立 Profile 的官方安装与实际加载检查；运行文件及 DSH 加载声明与此前完整验收的 `0.1.0` 一致，可复用其功能验收结果。
 
+`0.1.2` 补充 npm 的仓库与项目链接，便于社区采集器识别；已逐文件对比线上 `0.1.1`，包内仅 `package.json` 元数据变化，运行文件及 DSH 加载声明一致。
+
 也可以从 [v0.1.0 发布页](https://github.com/nickfast2025/dsh-sky-window/releases/tag/v0.1.0)下载 `dsh-sky-window-0.1.0.tgz`，在下载目录打开 PowerShell：
 
 ```powershell

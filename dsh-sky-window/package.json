@@ -1,9 +1,16 @@
 {
   "name": "dsh-sky-window",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A living illustrated sky for the real DeepSeek Harness workspace.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickfast2025/dsh-sky-window.git",
+    "directory": "dsh-sky-window"
+  },
+  "homepage": "https://github.com/nickfast2025/dsh-sky-window#readme",
+  "bugs": { "url": "https://github.com/nickfast2025/dsh-sky-window/issues" },
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
